@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E1E;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 100px;
+}
+
+
+.cardForm {
+    width: 448px;
+    height: 673px;
+    background: #1E1E1E;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 200px;
+
+}
+
+input::placeholder {
+    padding: 10px;
+}
+
+input {
+    /* Divider/Light/1px - 60% */
+    margin-top: 50px;
+    border: 1px solid rgba(228, 228, 228, 0.6);
+    border-radius: 13px;
+    width: 325px;
+    height: 50px;
+    box-sizing: border-box;
+
+}
+
+label {
+    color: white;
+    margin-top: 20px;
+}
+
+select {
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    color: white;
+}
+
+.btn {
+    margin-top: 50px;
+}
+
+button {
+    background: #97C6D2;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 19px;
+    width: 240px;
+    height: 45PX;
+    font-size: 20px;
+    color:  #9F3B95;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+
+.textos {
+  color: white;
+  display: flex;
+  margin-right: 400px;
+  align-items: self-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gamerBoy {
+    margin-top: 40px;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Altera a direção dos elementos para empilhá-los verticalmente */
+      align-items: center;
+    }
+  
+    .cardForm {
+      width: 90%; /* Define a largura como uma porcentagem para se ajustar a diferentes tamanhos de tela */
+      margin: 20px; /* Adapta as margens para um espaçamento adequado */
+    }
+  
+    .textos {
+      margin: 20px;
+      text-align: center; /* Centraliza o texto */
+    }
+  
+    .textos,
+    .cardForm {
+      margin-top: 0; /* Remove a margem superior em telas menores */
+    }
+  
+    .gamerBoy {
+      margin-top: 20px;
+    }
+  }
+  
+  /* Estilos para telas maiores */
+  @media screen and (min-width: 1024px) {
+    .container {
+      justify-content: space-between; /* Distribui os elementos igualmente na horizontal */
+    }
+  
+    .textos {
+      margin-left: 50px; /* Ajusta a margem esquerda para maior espaçamento */
+    }
+}
+  
